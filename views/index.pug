@@ -1,0 +1,39 @@
+extends layout
+
+block content
+<<<<<<< HEAD
+    h5 Welcome to the shop.
+    h1 VIHAN
+    hr
+    topic User name
+    input(type='text')
+    br
+    topic Password
+    input(type='password')
+    button(title='Sign in')
+    br
+    a(href='/musics/liked-music' download='music.mp3') beloved music!
+    br
+    a(href='http://google.com') google
+=======
+  .main.container
+    .row
+      .col-lg-6.col-md-offset-3
+        h1.display-4.m-b-2 Sign Up
+
+        // register form
+        form(method='post' action='/api/register')
+          div.form-group
+            label(for='name') Name:
+            input#name.form-control(type='text', placeholder='first and last' name='name')
+          div.form-group
+            label(for='email') Email:
+            input#email.form-control(type='email', placeholder='name@email.com' name='email')
+          div.form-group
+            label(for='pw') Password:
+            input#pw.form-control(type='password' name='password')
+          div.form-group
+            label(for='pw2') Confirm Password:
+            input#pw2.form-control(type='password' name='confirmPassword')
+          button.btn.btn-primary(type='submit') Sign up
+>>>>>>> 18d8941d24c6d764a4a3b65d9fb441a43af63d85
